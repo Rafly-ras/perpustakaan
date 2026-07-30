@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 min-h-screen antialiased;
+  }
+}
+
+/* Print Stylesheet for Barcode Sticker Grid Printing (FR-BCK-02) */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .print-sticker-grid-container,
+  .print-sticker-grid-container * {
+    visibility: visible;
+  }
+  
+  .print-sticker-grid-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10mm;
+    background: white !important;
+    color: black !important;
+  }
+
+  .sticker-item {
+    page-break-inside: avoid;
+    border: 1px dashed #ccc !important;
+    padding: 4mm;
+  }
+}

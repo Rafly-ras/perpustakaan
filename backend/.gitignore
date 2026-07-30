@@ -1,0 +1,21 @@
+/vendor
+.env*
+/.phpunit.result.cache
+/homestead.json
+/homestead.yaml
+/auth.json
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*.log
+/.phpstorm.meta.php
+/_ide_helper.php
+/_ide_helper_models.php
+.DS_Store
+Thumbs.db
+
+# Docker files
+Dockerfile
+docker-entrypoint.sh

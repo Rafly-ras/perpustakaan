@@ -1,0 +1,23 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+
+# Environment files (all .env files including .env.example)
+.env*
+
+# Docker files (root & subfolders)
+docker-compose*.yml
+Dockerfile
+*.dockerfile
+docker-entrypoint.sh
+
+# Documentation
+docs/
+
+# Large dependency directories safety fallback
+**/node_modules/
+**/vendor/
